@@ -5,7 +5,6 @@
 *.doc
 *.dvi
 *.log
-*.pdf
 *.synctex.gz
 *.log
 
