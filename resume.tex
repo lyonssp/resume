@@ -1,18 +1,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Medium Length Professional CV
 % LaTeX Template
-% Version 2.0 (8/5/13)
+% Version 3.0 (December 17, 2022)
 %
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
 %
 % Original author:
 % Trey Hunner (http://www.treyhunner.com/)
 %
-% Important note:
-% This template requires the resume.cls file to be in the same directory as the
-% .tex file. The resume.cls file provides the resume style used for structuring the
-% document.
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -20,13 +21,25 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass{resume} % Use the custom resume.cls style
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	11pt, % Default font size, can use 10pt, 11pt or 12pt
+]{resume} % Use the resume class
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{ebgaramond} % Use the EB Garamond font
 
-\name{Sean Lyons} % Your name
-\address{Austin, TX 78721} % Your address
-\address{(540)~$\cdot$~290~$\cdot$~6284 \\ lyonssp777@gmail.com} % Your phone number and email
+%------------------------------------------------
+
+\name{Sean Lyons} % Your name to appear at the top
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+\address{1144 Brookswood Ave \\ Austin, TX 78721} % Main address
+
+\address{(540)~$\cdot$~290~$\cdot$~6284 \\ lyonssp777@gmail.com} % Contact information
+
+%----------------------------------------------------------------------------------------
 
 \begin{document}
 
@@ -35,11 +48,11 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
-
-{\bf Clarkson University} \hfill {\em December 2014} \\ 
-B.S. in Computer Science \& Mathematics \\
-GPA: 3.85
-
+	
+	\textbf{Clarkson University} \hfill \textit{Dec 2014} \\ 
+	B.S. in Computer Science \& Mathematics \\
+	GPA: 3.85
+	
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -48,56 +61,56 @@ GPA: 3.85
 
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{Favor}{Nov 2022 - Present}{Tech Lead}{Austin, TX}
-\item Designing and building marketing technology platform using third party tooling {\footnotesize [PHP / Kafka / Segment]}
-\item Optimizing core search for customer engagement {\footnotesize [Elasticsearch / Kafka / ML ]}
-\item Designing and building content recommendation system {\footnotesize [Elasticsearch / Kafka / ML ]}
+	\begin{rSubsection}{Favor}{Nov 2022 - Present}{Tech Lead}{Austin, TX}
+        \item Enhancing software delivery practices to improve DORA metrics
+        \item Improving consumer growth KPIs with feature experimentation
+        \item Building content recommendation and search systems to optimize conversion
+        \item Leading prioritization of tech debt balanced against product deliverables
+	\end{rSubsection}
 
-\end{rSubsection}
+    %------------------------------------------------
 
-\begin{rSubsection}{Amazon Web Services}{Jul 2021 - Nov 2022}{Senior Software Engineer}{Austin, TX}
-\item Contributed across the control plane and data plane of Amazon Managed Prometheus
-\item Designed Kubernetes controllers to speed up data plane deployments {\footnotesize [Golang / Typescript / CDK]}
-\item Refactored metering pipelines to implement more robust error handling {\footnotesize [Typescript / CDK]}
+    \begin{rSubsection}{Amazon Web Services}{Jul 2021 - Nov 2022}{Senior Software Engineer}{Austin, TX}
+        \item Contributed across the control plane and data plane of Amazon Managed Prometheus
+        \item Designed Kubernetes controllers to speed up data plane deployments
+        \item Refactored metering pipelines to implement more robust error handling
+    \end{rSubsection}
 
-\end{rSubsection}
+    \begin{rSubsection}{Symbiont}{Sep 2018 - Jul 2021}{Senior Software Engineer}{New York, NY}
+        \item Developed highly available and linearizable distributed ledger software
+        \item Reduced CI pipeline duration by 75\% with improved testing practices
+        \item Developed automated Jepsen chaos testing suite
+    \end{rSubsection}
 
-\begin{rSubsection}{Symbiont}{Sep 2018 - Jul 2021}{Senior Software Engineer}{New York, NY}
-\item Developed highly available and linearizable distributed ledger software {\footnotesize [Golang / Kubernetes / Docker]}
-\item Reduced CI pipeline duration by 75\% with improved testing practices {\footnotesize [Golang / Bazel]}
-\item Developed automated Jepsen chaos testing suite {\footnotesize [Clojure]}
+    %------------------------------------------------
 
-\end{rSubsection}
+    \begin{rSubsection}{iHeartRadio}{Mar 2018 - Sep 2018}{Senior Site Reliability Engineer}{New York, NY}
+        \item Engineered migration to new observability platform
+        \item Modernized deployment tooling for audio streaming infrastructure
+    \end{rSubsection}
 
-%------------------------------------------------
+    %------------------------------------------------
 
-\begin{rSubsection}{iHeartRadio}{Mar 2018 - Sep 2018}{Senior Site Reliability Engineer}{New York, NY}
-\item Engineered migration to new observability platform {\footnotesize [Golang / Prometheus / Grafana]}
-\item Modernized deployment tooling for audio streaming infrastructure {\footnotesize [Terraform / Ansible]}
+    \begin{rSubsection}{Commonbond}{Mar 2016 - Mar 2018}{Lead Software Engineer}{New York, NY}
+        \item Engineered event-driven auth and product backends
+        \item Implemented continuous integration and deployment pipelines
+    \end{rSubsection}
 
-\end{rSubsection}
+\end{rSection}
 
-%------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
 
-\begin{rSubsection}{Commonbond}{Mar 2016 - Mar 2018}{Lead Software Engineer}{New York, NY}
-\item Engineered event-driven auth and product backends {\footnotesize [Java / Scala / Kafka]}
-\item Implemented continuous integration and deployment pipelines {\footnotesize [Gitlab / Kubernetes / Docker]}
+\begin{rSection}{Technical Strengths}
 
-\end{rSubsection}
+	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+		Languages & Java, Kotlin, Golang, Python, Typescript, PHP, Clojure \\
+        Platforms & Kubernetes, AWS  \\
+		Tools & Elasticsearch, Kafka, PostgreSQL, DynamoDB, Redis, Terraform \\
+        Specializations & Architecture, Observability, Leadership, Experimentation \\
+	\end{tabular}
 
-%------------------------------------------------
-
-\begin{rSubsection}{FactSet}{January 2015 - Mar 2016}{Software Engineer}{New York, NY}
-\item Developed financial news applications and critical news delivery systems {\footnotesize [Perl / JavaScript / MySQL]}
-
-\end{rSubsection}
-
-%------------------------------------------------
-
-\begin{rSubsection}{The Mathworks}{January 2015 - Mar 2016}{Software Engineering Intern}{Natick, MA}
-\item Contributed to internal libraries powering Simulink fixed-point tooling {\footnotesize [C\texttt{++}]}
-
-\end{rSubsection}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -106,7 +119,7 @@ GPA: 3.85
 
 %\begin{rSection}{Section Name}
 
-%Section content\ldots
+	%Section content\ldots
 
 %\end{rSection}
 
