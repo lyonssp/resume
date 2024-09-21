@@ -23,7 +23,7 @@
 
 \documentclass[
 	%a4paper, % Uncomment for A4 paper size (default is US letter)
-	11pt, % Default font size, can use 10pt, 11pt or 12pt
+	10pt, % Default font size, can use 10pt, 11pt or 12pt
 ]{resume} % Use the resume class
 
 \usepackage{ebgaramond} % Use the EB Garamond font
@@ -48,10 +48,9 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
-	
-	\textbf{Clarkson University} \hfill \textit{Dec 2014} \\ 
-	B.S. in Computer Science \& Mathematics \\
-	GPA: 3.85
+
+    \textbf{University of Texas at Austin}, M.S. in Computer Science \hfill \textit{Sep 2024 - Present} \\ 
+    \textbf{Clarkson University}, B.S. in Computer Science \& Mathematics \hfill \textit{Sep 2010 - Dec 2014}
 	
 \end{rSection}
 
@@ -61,46 +60,64 @@
 
 \begin{rSection}{Experience}
 
-	\begin{rSubsection}{Favor}{Nov 2022 - Present}{Lead Full Stack Software Engineer, Consumer Growth}{Austin, TX}
-        \item Leading mobile product development for e-commerce consumers in a cross-functional product engineering team
-        \item Responsible for product architecture in a cloud microservice architecture deployed on Kubernetes
-        \item Improved app load times by 50\%, leading to an increase in user retention
-        \item Led integration of a new third-party marketing tool, decreasing CAC and unlocking new marketing tactics
-        \item Drove adoption of new release management processes, reducing company-wide change lead time
+	\begin{rSubsection}{Favor}{Nov 2022 - Present}{Senior Staff Software Engineer, Consumer Growth}{Austin, TX}
+        \item Leading architecture review for a service-oriented product architecture deployed on Kubernetes
+        \item Collaborating with product teams to coordinate technical roadmaps across 4 product teams
+        \item Mentoring and aligning consumer engineering teams to enforce adoption of best practices
+        \item Drove design and implementation of a new ML-driven recommendation system while improving app load times by 50\%
+        \item Led integration of third-party promotional tooling, decreasing CAC and unlocking new marketing tactics
 	\end{rSubsection}
 
     %------------------------------------------------
 
     \begin{rSubsection}{Amazon Web Services}{Jul 2021 - Nov 2022}{Senior Software Engineer, Managed Prometheus}{Austin, TX}
-        \item Shipped code to globally available environments with a cellular architecture with AWS stack
-        \item Contributed to Cortex data plane scalability by improving time-series compaction speed with Golang
-        \item Built Kubernetes controllers to speed up global data plane deployments using kubebuilder and envtest \footnote{https://aws.amazon.com/blogs/opensource/speed-up-highly-available-deployments-on-kubernetes/} \footnote{https://github.com/aws/zone-aware-controllers-for-k8s}
-        \item Refactored global event-driven metering pipelines to improve reliability with SQS and AWS Cloudformation
+        \item Shipped to global AWS regions with a cellular architecture using Golang, Typescript, and Kotlin
         \item Operated in an on-call rotation for an AWS service with a 99.9\% uptime SLA
+        \item Built custom Kubernetes controllers to speed up global multi-az deployments by 60\% \footnote{https://aws.amazon.com/blogs/opensource/speed-up-highly-available-deployments-on-kubernetes/} \footnote{https://github.com/aws/zone-aware-controllers-for-k8s}
+        \item Refactored global service usage metering pipelines to improve reliability
     \end{rSubsection}
+    
+    %------------------------------------------------
 
-    \begin{rSubsection}{Symbiont}{Sep 2018 - Jul 2021}{Senior Software Engineer}{New York, NY}
-        \item Led implementation of a proprietary distributed database and consensus protocol written in Golang
-        \item Implemented a reactive development framework to enable simulation testing
-        \item Reduced CircleCI pipeline runtime by 75\% with simulation testing practices
-        \item Developed automated Jepsen chaos testing suite in Clojure to test database consistency properties
+    \begin{rSubsection}{Symbiont}{Sep 2018 - Jul 2021}{Tech Lead}{New York, NY}
+        \item Implementated of a proprietary low-latency distributed database and consensus protocol written in Golang
+        \item Reduced CI pipeline runtime by 75\% with Bazel and improved testing practices
     \end{rSubsection}
 
     %------------------------------------------------
 
     \begin{rSubsection}{iHeartRadio}{Mar 2018 - Sep 2018}{Senior Site Reliability Engineer}{New York, NY}
-        \item Engineered migration to new observability platform based on Prometheus and Grafana
-        \item Adopted Kubernetes-based deployment strategy for audio streaming infrastructure
+        \item Migrated company to new AWS infrastructure observability platform based on Prometheus and Grafana
+        \item Adopted Kubernetes-based deployment architecture for business-critical audio streaming infrastructure
     \end{rSubsection}
 
     %------------------------------------------------
 
     \begin{rSubsection}{Commonbond}{Mar 2016 - Mar 2018}{Senior Full Stack Software Engineer}{New York, NY}
-        \item Engineered event-driven auth and product backends with Kafka and Spring Boot
-        \item Implemented continuous integration and deployment pipelines
+        \item Managed a team of 3 contracted engineers
+        \item Designed and implemented Java Spring Boot services deployed on Kubernetes
+        \item Contributed to React product UI
+    \end{rSubsection}
+    
+    %------------------------------------------------
+
+    \begin{rSubsection}{FactSet}{Jan 2015 - Mar 2016}{Full Stack Software Engineer}{New York, NY}
+        \item Implemented AngularJS-based product UX and Java services for a financial news aggregator
     \end{rSubsection}
 
 \end{rSection}
+
+\begin{rSection}{Technical Skills}
+
+    \textbf{Languages}: Kotlin, Java, Golang, Python, PHP, Typescript, SQL \\
+    \textbf{Databases}: PostgreSQL, MongoDB, Elasticsearch, Redis \\
+    \textbf{Frameworks}: Spring Boot, React, Expo, FastAPI, Flask \\
+    \textbf{Tools \& Platforms}: AWS, Kubernetes, Docker, Prometheus, Git, Terraform \\
+    \textbf{Skills}: Leadership, Service-oriented Architecture, API Design, A/B Testing \\
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
 
 %----------------------------------------------------------------------------------------
 %	EXAMPLE SECTION
