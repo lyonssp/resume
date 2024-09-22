@@ -27,32 +27,15 @@
 ]{resume} % Use the resume class
 
 \usepackage{ebgaramond} % Use the EB Garamond font
+\usepackage{fontawesome5} % Use awesome fonts
 
 %------------------------------------------------
 
 \name{Sean Lyons} % Your name to appear at the top
 
-% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
-% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
-
-\address{1144 Brookswood Ave \\ Austin, TX 78721} % Main address
-
-\address{(540)~$\cdot$~290~$\cdot$~6284 \\ lyonssp777@gmail.com} % Contact information
-
-%----------------------------------------------------------------------------------------
+\address{ \hfill \faMapMarker* Austin, TX \hfill \faEnvelope[regular] lyonssp777@gmail.com \hfill \faMobile* (540) 290-6284 \hfill }
 
 \begin{document}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Education}
-
-    \textbf{University of Texas at Austin}, M.S. in Computer Science \hfill \textit{Sep 2024 - Present} \\ 
-    \textbf{Clarkson University}, B.S. in Computer Science \& Mathematics \hfill \textit{Sep 2010 - Dec 2014}
-	
-\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -61,20 +44,20 @@
 \begin{rSection}{Experience}
 
 	\begin{rSubsection}{Favor}{Nov 2022 - Present}{Senior Staff Software Engineer, Consumer Growth}{Austin, TX}
-        \item Leading architecture review for a service-oriented product architecture deployed on Kubernetes
-        \item Collaborating with product teams to coordinate technical roadmaps across 4 product teams
-        \item Mentoring and aligning consumer engineering teams to enforce adoption of best practices
-        \item Drove design and implementation of a new ML content recommendation system while improving app load times by 50\%
+        \item Architected improvements to Elasticsearch result relevancy to improve top of funnel CTR by 10\%
+        \item Drove rearchitecture of ML-driven content recommendation system to improve app load times by 50\%
         \item Optimizing consumer experiences with continuous feature experimentation and a/b testing
+        \item Collaborating with product teams to coordinate technical roadmaps across teams working on marketing, search, and discovery
+        \item Mentoring and aligning consumer engineering teams to enforce adoption of best practices
 	\end{rSubsection}
 
     %------------------------------------------------
 
     \begin{rSubsection}{Amazon Web Services}{Jul 2021 - Nov 2022}{Senior Software Engineer, Managed Prometheus}{Austin, TX}
-        \item Shipped to global AWS regions with a cellular architecture using Golang, Typescript, and Kotlin
-        \item Operated in an on-call rotation for an AWS service with a 99.9\% uptime SLA
-        \item Built custom Kubernetes controllers to speed up global multi-AZ deployments by 60\% \footnote{https://aws.amazon.com/blogs/opensource/speed-up-highly-available-deployments-on-kubernetes/} \footnote{https://github.com/aws/zone-aware-controllers-for-k8s}
-        \item Refactored global service usage metering pipelines to improve reliability
+        \item Shipped software across the control plane and data plane for multiple AWS services with Java, Kotlin, and Golang
+        \item Operated in OpenSearch on-call rotation for Amazon Managed Prometheus with a 99.9\% uptime SLA
+        \item Built custom Kubernetes controllers in Golang to speed up global multi-AZ deployments by 60\% \footnote{https://aws.amazon.com/blogs/opensource/speed-up-highly-available-deployments-on-kubernetes/} \footnote{https://github.com/aws/zone-aware-controllers-for-k8s}
+        \item Contributed to OpenSearch Auto-Tune sharding architecture in Java and Kotlin
     \end{rSubsection}
     
     %------------------------------------------------
@@ -107,13 +90,29 @@
 
 \end{rSection}
 
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+    \textbf{University of Texas at Austin}, M.S. in Computer Science \hfill \textit{Sep 2024 - Present} \\ 
+
+    \textbf{Clarkson University}, B.S. in Computer Science \& Mathematics \hfill \textit{Sep 2010 - Dec 2014} \\
+	
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
 \begin{rSection}{Technical Skills}
 
-    \textbf{Languages}: Kotlin, Java, Golang, Python, PHP, Typescript, SQL \\
-    \textbf{Databases}: PostgreSQL, MongoDB, Elasticsearch, Redis \\
-    \textbf{Frameworks}: Spring Boot, React, Expo, FastAPI, Flask \\
-    \textbf{Tools \& Platforms}: AWS, Kubernetes, Docker, Prometheus, Git, Terraform \\
+    \textbf{Databases}: PostgreSQL, Elasticsearch, MongoDB, Redis \\
+    \textbf{Frameworks}: Spring Boot, Node.js, React, Expo \\
+    \textbf{Tools \& Platforms}: AWS, Kubernetes, Docker, Prometheus, Terraform \\
     \textbf{Skills}: Leadership, Service-oriented Architecture, API Design, A/B Testing \\
+    \textbf{Languages}: Kotlin, Java, Golang, Python, PHP, Typescript, SQL \\
 
 \end{rSection}
 
